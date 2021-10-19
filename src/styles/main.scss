@@ -1,0 +1,33 @@
+@import "libs";
+@import "fonts";
+@import "vars";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'TT Norms', sans-serif;
+  line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page__content {
+  flex: 1 0 auto;
+}
+.page__footer {
+  flex: 0 0 auto;
+}
+
+@import "layouts/index";

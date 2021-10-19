@@ -1,0 +1,52 @@
+.header {
+  background-color: #000000;
+  padding: 20px 0;
+  &__logo {
+    img {
+      max-width: 121px;
+    }
+  }
+  &__fm {
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+    letter-spacing: 0.15em;
+
+    color: #FFFFFF;
+
+    opacity: 0.15;
+    @include media(768) {
+      display: none;
+    }
+  }
+  &__menu {
+    text-decoration: none;
+    li {
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: 0.15em;
+
+        color: #FFFFFF;
+      }
+      &.active {
+        a {
+          color: #EFF554;
+        }
+      }
+    }
+  }
+  &__social {
+    a {
+      opacity: .3;
+    }
+  }
+}
