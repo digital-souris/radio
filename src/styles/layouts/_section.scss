@@ -1,0 +1,108 @@
+.section {
+  position: relative;
+  //overflow: hidden;
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  &_programs {
+    padding-top: 192px;
+    @include media(768) {
+      padding-top: 90px;
+    }
+    &::before {
+      background-image: url(../img/bg-programs-1.png);
+      content: '';
+      position: absolute;
+      width: 249px;
+      height: 592px;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include media(768) {
+        display: none;
+      }
+    }
+    &::after {
+      background-image: url(../img/bg-programs-2.png);
+      content: '';
+      position: absolute;
+      width: 242px;
+      height: 908px;
+      top: 60%;
+      right: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include media(768) {
+        display: none;
+      }
+    }
+  }
+  &_new {
+    padding-top: 156px;
+    @include media(768) {
+      padding-top: 110px;
+    }
+  }
+  &_instagram {
+    padding-top: 125px;
+    @include media(768) {
+      padding-top: 90px;
+    }
+  }
+  &_news {
+    padding-top: 95px;
+    @include media(768) {
+      padding-top: 70px;
+    }
+  }
+  &_tracks {
+    padding-top: 133px;
+    @include media(768) {
+      padding-top: 98px;
+    }
+  }
+  &_idea {
+    position: relative;
+    padding-top: 160px;
+    @include media(768) {
+      padding-top: 44px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 40%;
+      max-width: 391px;
+      height: 759px;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      background-image: url(../img/idea-bg.png);
+      top: 160px;
+      left:  0;
+      @include media(992) {
+        display: none;
+      }
+    }
+  }
+  &_social {
+    padding-top: 184px;
+    @include media(768) {
+      padding-top: 110px;
+    }
+  }
+  &_video {
+    padding-top: 172px;
+    @include media(768) {
+      padding-top: 93px;
+    }
+  }
+  &_page {
+    padding-top: 150px;
+    overflow: hidden;
+
+  }
+}

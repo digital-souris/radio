@@ -1,0 +1,28 @@
+.title {
+  &_second {
+    padding-bottom: 60px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 83px;
+    /* identical to box height */
+    @include media(768) {
+      font-size: 42px;
+      line-height: 50px;
+      padding-bottom: 45px;
+    }
+  }
+  &_main {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 118px;
+    @include media(992) {
+      font-size: 82px;
+      line-height: 1.5;
+    }
+    @include media(768) {
+      font-size: 64px;
+    }
+  }
+}

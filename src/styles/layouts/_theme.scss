@@ -1,0 +1,49 @@
+.dark {
+  .section {
+    background-color: #000;
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  .news__wrapper {
+    background-color: #181818;
+    @include media(768) {
+      background-color: transparent;
+    }
+  }
+  .tracks__wrapper {
+    background: rgba(255, 255, 255, 0.09);
+    @include media(768) {
+      background-color: transparent;
+    }
+  }
+  .section {
+    &_idea {
+      &::before {
+        display: block;
+        background-image: url(../img/idea-bg-white.png);
+        @include media(768) {
+          display: none;
+        }
+      }
+    }
+  }
+  .social__item {
+    background-color: #181818;
+    @include media(768) {
+      background: transparent;
+    }
+  }
+
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+a {
+  color: #000;
+}

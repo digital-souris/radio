@@ -1,0 +1,47 @@
+.program {
+  margin-bottom: 25px;
+  position: relative;
+  display: block;
+  border-radius: 42px;
+
+  overflow: hidden;
+  @include media(768) {
+    max-width: 160px;
+  }
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+  &__wrap {
+    @include media(768) {
+      margin: 0 0px;
+      margin-right: 10px;
+      width: auto;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    position: absolute;
+    left: 35px;
+    right: 35px;
+    bottom: 40px;
+    @include media(992) {
+      left: 20px;
+      bottom: 20px;
+      right: 20px;
+      line-height: 14px;
+      font-size: 12px;
+    }
+  }
+}

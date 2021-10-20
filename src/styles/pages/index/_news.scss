@@ -1,0 +1,228 @@
+.new {
+  &__item {
+    &_index {
+      position: relative;
+      height: 321px;
+      max-width: 183px;
+      border-radius: 42px;
+      overflow: hidden;
+      margin-right: 20px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45.02%, #000000 100%);
+      &:last-child {
+        margin-right: 0;
+      }
+      &.slick-current {
+        &::before {
+          content: '';
+          margin: 6px;
+          border: 4px solid #733CF5;
+          box-sizing: border-box;
+          border-radius: 40px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      @include media(768) {
+        height: 270px;
+        max-width: 154px;
+      }
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+    right: 30px;
+    @include media(768) {
+      font-size: 13px;
+      left: 20px;
+      right: 20px;
+      bottom: 35px;
+    }
+  }
+}
+.js-slider-new {
+  .slick-prev, .slick-next {
+    width: 70px;
+    height: 70px;
+    &::before {
+      display: none;
+    }
+  }
+  .slick-prev {
+    left: 0;
+    z-index: 10;
+    top: 50%;
+  }
+  .slick-next {
+    z-index: 10;
+    top: 50%;
+    right: 0;
+
+  }
+}
+
+.news {
+  &__wrapper {
+    padding: 80px;
+    overflow: hidden;
+    //background: #F5F5F5;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+    border-radius: 42px;
+    @include media(768) {
+      box-shadow: none;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+    }
+  }
+  &__item {
+    margin-bottom: 30px;
+    text-decoration: none;
+    @include media(768) {
+      max-width: 155px;
+      margin-right: 18px;
+
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__image {
+    img {
+      width: 100%;
+      max-width: 89px;
+      @include media(768) {
+        max-width: 100%;
+      }
+    }
+  }
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+    @include media(768) {
+      padding-top: 20px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    opacity: .5;
+    line-height: 22px;
+    padding-top: 12px;
+    @include media(768) {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+  &__date {
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    @include media(768) {
+      font-size: 11px;
+      line-height: 14px;
+      text-align: left;
+      padding-top: 20px;
+    }
+  }
+  &__banner {
+    background: #733CF5;
+    border-radius: 42px;
+    overflow: hidden;
+    height: 714px;
+    position: relative;
+    @include media(768) {
+      height: 540px;
+      margin-top: 20px;
+    }
+    img {
+      position: absolute;
+      right: 0;
+      top: 60%;
+      transform: translateY(-50%);
+      max-width: 100%;
+    }
+    p {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 103px;
+      line-height: 62px;
+
+      color: #FFFFFF;
+      width: 132px;
+      position: relative;
+      top: 50px;
+      left: 52px;
+      word-break: break-all;
+      @include media(992) {
+        left: 10px;
+      }
+      @include media(768) {
+        left: 50px;
+        font-size: 70.724px;
+        line-height: 43px;
+        width: 90px;
+      }
+    }
+  }
+  &__links {
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    @include media(992) {
+      left: 5px;
+    }
+    @include media(768) {
+      left: 50px;
+    }
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.news-image {
+  &-first {
+    max-width: 542px;
+    width: 50vw;
+    position: absolute;
+    top: -107px;
+    left: -336px;
+    z-index: -1;
+    @include media(768) {
+      left: -150px;
+    }
+  }
+}
+
+.news__content {
+  padding-top: 67px;
+}

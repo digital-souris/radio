@@ -1,0 +1,41 @@
+.instagram {
+  &__item {
+    text-decoration: none;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: bottom right;
+    //min-height: 237px;
+    border-radius: 42px;
+    overflow: hidden;
+    padding: 52px 225px 82px 75px;
+    @include media(992) {
+      margin-bottom: 20px;
+    }
+    @include media(768) {
+      padding: 32px 140px 50px 45px;
+    }
+  }
+  &__content {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    @include media(1400) {
+      font-size: 30px;
+    }
+    @include media(1200) {
+      font-size: 24px;
+    }
+    @include media(768) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &_white {
+      color: #FFFFFF;
+    }
+    &_dark {
+      color: #000;
+    }
+  }
+}

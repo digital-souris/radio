@@ -18,6 +18,15 @@ html,
 body {
   height: 100%;
 }
+
+body {
+  &.light {
+    background-color: #fff;
+  }
+  &.dark {
+    background: #000;
+  }
+}
 .page {
   display: flex;
   flex-direction: column;
@@ -25,9 +34,11 @@ body {
 }
 .page__content {
   flex: 1 0 auto;
+  padding-bottom: 100px;
 }
 .page__footer {
   flex: 0 0 auto;
 }
 
 @import "layouts/index";
+@import "pages/index";

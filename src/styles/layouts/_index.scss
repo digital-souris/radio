@@ -1,2 +1,18 @@
 @import "header";
+@import "title";
+@import "section";
 @import "footer";
+@import "theme";
+
+.container {
+  &_relative {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  .container {
+    max-width: 1220px;
+  }
+}
+
