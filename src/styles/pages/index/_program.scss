@@ -15,12 +15,8 @@
   }
   &__wrap {
     @include media(768) {
-      margin: 0 0px;
-      margin-right: 10px;
+      margin: 0 10px;
       width: auto;
-      &:last-child {
-        margin-right: 0;
-      }
     }
   }
   &__content {
