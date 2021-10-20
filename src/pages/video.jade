@@ -1,0 +1,23 @@
+extends ./layouts/layout.jade
+
+block content
+    section.section_page.section_page-news
+        .container.container_relative
+            img(src='../img/video-page.png').news-image.video-image-first
+            .row
+                .col-12
+                    h1.title.title_main Видео
+            .page_charts
+                .row
+                    .col-12
+                        .tracks__wrapper
+                            .row
+                                - for(var x = 0; x < 20; x++)
+                                    .col-12.col-md-6.col-lg-4
+                                        .video.video_page.video_full
+                                            .video__iframe
+                                                <iframe src="//www.youtube.com/embed/JMJXvsCLu6s" frameborder="0" allowfullscreen></iframe>
+                                            .video__content Открытие нового концепт паба
+                                .col-12
+                                    .button-load
+                                        a(href='#') смотреть все видео

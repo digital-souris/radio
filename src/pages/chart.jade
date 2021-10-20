@@ -1,3 +1,24 @@
 extends ./layouts/layout.jade
 
 block content
+    section.section_page.section_page-news
+        .container.container_relative
+            img(src='../img/chart-page.png').news-image.chart-image-first
+            .row
+                .col-12
+                    h1.title.title_main ТОП чарт “Открытия”
+            .page_charts
+                .row
+                    .col-12
+                        .tracks__wrapper
+                            .row
+                                - for(var x = 0; x < 20; x++)
+                                    a(href='#').tracks__item.tracks__item_page.col-3
+                                        .tracks__img
+                                            .tracks__count=x+1
+                                            img(src='../img/track.png')
+                                        .tracks__name JAWNY
+                                        .tracks__desc Juju
+                                .col-12
+                                    .button-load
+                                        a(href='#') Больше треков

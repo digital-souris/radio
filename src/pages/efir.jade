@@ -1,3 +1,21 @@
 extends ./layouts/layout.jade
 
 block content
+    section.section_page.section_page-news
+        .container.container_relative
+            img(src='../img/efir-page.png').news-image.efir-image-first
+            .row
+                .col-12
+                    h1.title.title_main Эфиры и подкасты
+            .section_new
+                .row
+                    .col-12
+                        h2.title.title_second Что нового?
+                .news__slider.js-slider-new.row
+                    - for(var x = 0; x < 8; x++)
+                        a(href='#').new__item.new__item_index
+                            .new__image.new__image_index
+                                img(src='../img/news-item.jpg')
+                            .new__content.new__content_index Открытие нового объекта в Советском районе
+            .button-load
+                a(href='#') смотреть еще

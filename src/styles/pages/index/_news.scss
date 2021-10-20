@@ -209,19 +209,6 @@
   }
 }
 
-.news-image {
-  &-first {
-    max-width: 542px;
-    width: 50vw;
-    position: absolute;
-    top: -107px;
-    left: -336px;
-    z-index: -1;
-    @include media(768) {
-      left: -150px;
-    }
-  }
-}
 
 .news__content {
   padding-top: 67px;

@@ -1,3 +1,30 @@
 extends ./layouts/layout.jade
 
 block content
+    section.section_page.section_page-news
+        .container.container_relative
+            img(src='../img/page-news.png').news-image.news-image-first
+            .row
+                .col-12
+                    h1.title.title_main Заголовок новости
+            .content.content_news
+                .row.justify-content-between
+                    .col-12.col-md-6
+                        .images__item
+                            img(src='../img/img.jpg')
+                    .col-12.col-md-5
+                        p Наша идея — уникальная структура медийной среды, призванная создать устойчивый интерес аудитории к продвигаемому редакцией культурно-просветительскому и образовательному контенту.
+                        p Это будет площадка, которая использует для обозначенной цели все существующие на сегодня телекоммуникационные возможности и применяет самые актуальные и популярные у целевой аудитории формы подачи материала.
+                        p Кто сказал, что детей в младшем школьном возрасте чему-то научить через игру можно, а подростков — нельзя?
+                        p Если карточка с розовым слоником и надписью elephant помогает ребёнку учить английский язык в детстве, то и баттл аллюзий на «Щелкунчика», так или иначе, погрузит молодого автора в музыку Петра Ильича...
+            .content.content_news
+                .row
+                    - for(var x = 0; x<6;x++)
+                        .col-4
+                            .images__item
+                                img(src='../img/img.jpg')
+            .content.content_news
+                h2.title.title_second Заголовок для видео
+                .video.video_full
+                    .video__iframe
+                        <iframe src="//www.youtube.com/embed/JMJXvsCLu6s" frameborder="0" allowfullscreen></iframe>

@@ -19,10 +19,14 @@
     @include media(768) {
       margin-bottom: 20px;
     }
+    &_page {
+      margin-bottom: 50px;
+    }
   }
   &__img {
     border-radius: 34px;
     overflow: hidden;
+    position: relative;
     img {
       width: 100%;
     }
@@ -41,6 +45,27 @@
       line-height: 15px;
       padding-top: 12px;
     }
+  }
+  &__count {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #733CF5;
+    border-radius: 8px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12.5px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
   }
   &__desc {
     font-style: normal;
@@ -88,6 +113,12 @@
   width: 100%;
   @include media(768) {
     max-width: 155px;
+  }
+  &_full {
+    max-width: 100%;
+  }
+  &_page {
+    padding-bottom: 48px;
   }
   &__iframe {
     position: relative;
