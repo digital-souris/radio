@@ -431,6 +431,7 @@ $(document).ready(function () {
             audio.closest('.efir').find('.efir__play').removeClass('play')
             const findAudio = radio.audios[index + 1]
             if (findAudio) {
+                findAudio.el.closest('.efir').find('.efir__play').addClass('play')
                 findAudio.audio.play()
                 radio.changeAudio(findAudio.el, findAudio.index)
             }
@@ -454,6 +455,12 @@ $(document).ready(function () {
 
         })
     })
+})
+
+$('.video__image').click(function () {
+    const src = $(this).attr('data-frame')
+    $(this).parent().find('iframe').attr('src', src)
+    $(this).hide()
 })
 $('.radio__play').click(function () {
     radio.changeAudioStatus()
