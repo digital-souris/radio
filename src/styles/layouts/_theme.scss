@@ -21,6 +21,9 @@
       background-color: transparent;
     }
   }
+  .efir {
+    background-color: #181818;
+  }
   .section {
     &_idea {
       &::before {
@@ -37,6 +40,9 @@
     @include media(768) {
       background: transparent;
     }
+  }
+  .efir__play svg * {
+    fill: #fff;
   }
 
   color: #fff;

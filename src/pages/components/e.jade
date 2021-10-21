@@ -1,0 +1,28 @@
+section.section.section_efirs
+    .container
+        .row
+            .col-12
+                h2.title.title_second Последние эфиры
+        .row
+            .col-12
+                - for(var x = 0; x < 2; x++)
+                    .efir
+                        .efir__wrapper.d-flex
+                            .efir__avatars.d-flex
+                                .efir__avatar(style='z-index: 2')
+                                    img(src='../img/avatar.png')
+                                    .efir__info.efir__info_left.efir__info_orange LIVE
+                                .efir__avatar(style='z-index: 1')
+                                    img(src='../img/avatar.png')
+                                    .efir__info.efir__info_right.efir__info_puple +1
+                            .efir__wrap
+                                .efir__name О любви к Deep House. Электронная музыка в 2022
+                                .efir__author Dj Nation / Alex Moscow
+                                .efir__player.d-flex.justify-content-between.align-items-center
+                                    audio(src='./music/1.mp3' class='efir__music' id='music_'+x)
+                                    .efir__play
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 2.55551V12.1255C0 14.0855 2.13 15.3155 3.83 14.3355L7.98 11.9455L12.13 9.54551C13.83 8.56551 13.83 6.11551 12.13 5.13551L7.98 2.73551L3.83 0.345508C2.13 -0.634492 0 0.585507 0 2.55551Z" fill="black"/>
+                                        </svg>
+                                    .efir__bars
+                                    .efir__time 54:42

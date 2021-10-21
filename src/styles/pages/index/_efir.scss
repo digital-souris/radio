@@ -1,0 +1,98 @@
+.efir {
+  padding: 70px;
+  background-color: #F5F5F5;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 42px;
+  margin-bottom: 25px;
+  &__wrapper {
+    position: relative;
+  }
+
+  &__avatars {
+    .efir__avatar {
+      position: relative;
+      left: -56px;
+      &:first-child {
+        left: 0;
+      }
+    }
+  }
+  &__avatar {
+    border: 5px solid #733CF5;
+    border-radius: 10em;
+    position: relative;
+    background-color: #fff;
+    padding: 5px;
+  }
+  &__info {
+    border: 5px solid #FFFFFF;
+    border-radius: 6.2069px;
+    position: absolute;
+    padding: 3px 6px;
+    font-weight: bold;
+    font-size: 12.4138px;
+    line-height: 15px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    top: -5px;
+    z-index: 5;
+    &_left {
+      left: -5px;
+    }
+    &_right {
+      right: -5px;
+    }
+    &_orange {
+      background: #FD2D2D;
+    }
+    &_puple {
+      background: #733CF5;
+    }
+  }
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 8px;
+  }
+  &__author {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    opacity: .5;
+  }
+  &__wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  &__player {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__play {
+    cursor: pointer;
+    svg {
+      * {
+        fill: #000
+      }
+    }
+  }
+  &__bars {
+    width: 100%;
+    margin: 0 25px;
+    position: relative;
+  }
+  &__time {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
