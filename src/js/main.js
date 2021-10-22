@@ -3,6 +3,8 @@ $('.js-slider').slick({
     slidesToScroll: 1,
     autoplay: true,
     dots: true,
+    swipe: true,
+    swipeToSlide: true,
     arrows: true,
     nextArrow: '<button id="next" type="button" class="slick-next slick-arrow"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
         '<g filter="url(#filter0_b_48:369)">\n' +
@@ -60,6 +62,8 @@ if ($(document).width() > 768 && $('.js-slider-programs').hasClass('slick-initia
         dots: false,
         centerMode: false,
         variableWidth: true,
+        swipe: true,
+        swipeToSlide: true,
         infinite: true,
         arrows: false
     })
@@ -73,6 +77,8 @@ if ($(document).width() > 768 && $('.js-slider-news').hasClass('slick-initialize
         centerMode: false,
         variableWidth: true,
         infinite: true,
+        swipe: true,
+        swipeToSlide: true,
         arrows: false
     })
 }
@@ -85,6 +91,8 @@ if ($(document).width() < 768 && $('.js-slider-tracks').hasClass('slick-initiali
         variableWidth: true,
         infinite: true,
         arrows: true,
+        swipe: true,
+        swipeToSlide: true,
         nextArrow: '<button id="next" type="button" class="slick-next slick-arrow"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
             '<g filter="url(#filter0_b_48:369)">\n' +
             '<rect x="70" y="70" width="70" height="70" rx="17" transform="rotate(180 70 70)" fill="white" fill-opacity="0.05"/>\n' +
@@ -141,6 +149,8 @@ $('.js-slider-videos').slick({
     variableWidth: true,
     infinite: true,
     arrows: true,
+    swipe: true,
+    swipeToSlide: true,
     nextArrow: '<button id="next" type="button" class="slick-next slick-arrow"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
         '<g filter="url(#filter0_b_48:369)">\n' +
         '<rect x="70" y="70" width="70" height="70" rx="17" transform="rotate(180 70 70)" fill="white" fill-opacity="0.05"/>\n' +
@@ -186,6 +196,8 @@ $('.js-slider-new').slick({
     variableWidth: true,
     infinite: true,
     arrows: true,
+    swipe: true,
+    swipeToSlide: true,
     nextArrow: '<button id="next" type="button" class="slick-next slick-arrow"><svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
         '<g filter="url(#filter0_b_48:369)">\n' +
         '<rect x="70" y="70" width="70" height="70" rx="17" transform="rotate(180 70 70)" fill="white" fill-opacity="0.05"/>\n' +
