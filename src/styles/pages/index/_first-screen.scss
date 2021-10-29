@@ -14,6 +14,9 @@
     @include media(768) {
       min-height: 710px;
     }
+    &_small {
+      min-height: 611px;
+    }
   }
   &__title {
     font-style: normal;
@@ -24,6 +27,10 @@
 
 
     color: #FFFFFF;
+    &_small {
+      font-size: 100px;
+      line-height: 1.5;
+    }
     @include media(768) {
       font-size: 60.7364px;
       line-height: 72px;

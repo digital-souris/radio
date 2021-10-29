@@ -1,3 +1,68 @@
 extends ./layouts/layout.jade
 
 block content
+    .first-screen.first-screen_home
+        .first-screen__slider
+            .first-screen__item.first-screen__item_small(style='background-image:url(./img/rect.jpg)')
+                .container
+                    .first-screen__content
+                        h1.first-screen__title.first-screen__title_small открытие
+    section.section.section_new
+        .container
+            .row
+                .col-12
+                    h2.title.title_second Что нового?
+            .news__slider.js-slider-new.row
+                - for(var x = 0; x < 8; x++)
+                    a(href='#').new__item.new__item_index
+                        .new__image.new__image_index
+                            img(src='../img/news-item.jpg')
+                        .new__content.new__content_index Открытие нового объекта в Советском районе
+    include components/e.jade
+    section.section.section_news
+        .container
+            .row
+                .col-12
+                    h2.title.title_second Новости
+            .row
+                .col-12.col-md-12
+                    .news__wrapper
+                        .row.js-slider-news
+                            - for(var x = 0; x < 5;x++)
+                                a(href='#').news__item.col-3.col-md-12
+                                    .row
+                                        .col-12.col-md-2
+                                            .news__image
+                                                img(src='../img/news.png')
+                                        .col-12.col-md-7
+                                            h3.news__title Героями не рождаются
+                                            .news__text Небольшое описание для новости. Что-то там произошло интересное и все такое
+                                        .col-12.col-md-3
+                                            .news__date 10.10.2021
+    section.section.section_tracks.d-none.d-md-block
+        .container
+            .row
+                .col-12
+                    h2.title.title_second New tracks
+                .col-12
+                    .tracks__wrapper
+                        .js-slider-tracks
+                            - for(var x = 0; x < 8; x++)
+                                a(href='#').tracks__item
+                                    .tracks__img
+                                        img(src='../img/track.png')
+                                    .tracks__name JAWNY
+                                    .tracks__desc Juju
+    section.section.section_tracks.d-block.d-md-none
+        .container
+            .row
+                .col-12
+                    h2.title.title_second New tracks
+                .col-12
+                    .row
+                        - for(var x = 0; x < 8; x++)
+                            a(href='#').tracks__item.col-3
+                                .tracks__img
+                                    img(src='../img/track.png')
+                                .tracks__name JAWNY
+                                .tracks__desc Juju
